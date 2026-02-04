@@ -160,7 +160,7 @@ export default function Collections({
                     /* 2. OTHER USER'S NFT */
                     isListed ? (
                       /* 2.1 Listed for Sale: Buy */
-                      <button onClick={() => handleActionInitiate(nft.id, 'buy')} className="flex items-center justify-center gap-2 py-2 bg-amber-600 hover:bg-amber-500 text-black font-bold rounded-lg transition-all">
+                      <button onClick={() => handleActionInitiate(nft.id, 'buy')} className="w-full px-4 py-2 bg-gradient-to-r from-amber-600 to-yellow-500 hover:from-amber-500 hover:to-yellow-400 text-black rounded-lg font-bold transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50">
                         <ShoppingCart className="w-4 h-4" /> Buy Now
                       </button>
                     ) : inAuction ? (
